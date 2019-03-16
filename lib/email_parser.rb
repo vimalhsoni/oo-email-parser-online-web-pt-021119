@@ -13,7 +13,7 @@ def initialize(emails)
 end
 
   def parse
-   new_array = @emails.split(/[,]/)
+   new_array = @emails.strip.split(/[,]/)
    new_array.each do |item|
      new_item = item.strip
      array2 = []
