@@ -15,7 +15,6 @@ end
   def parse
   #  new_array = @emails.strip.split(/[,]/)
   @emails.split(/[,]/).map(&:strip)
-end
   end
 
 end
