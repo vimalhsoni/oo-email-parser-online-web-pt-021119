@@ -14,8 +14,8 @@ end
 
   def parse
   #  new_array = @emails.strip.split(/[,]/)
-  new_array = @emails.split(/[," "]/).map(&:strip)
-  new_array.unique
+  new_array = @emails.split(/[,]/).map(&:strip)
+  new_array
   end
 
 end
