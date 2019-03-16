@@ -16,7 +16,7 @@ end
   #  new_array = @emails.strip.split(/[,]/)
   new_array = @emails.split(/[,]/).map(&:strip)
   # new_array.reject { |item| item.empty? }
-  # new_array.uniq
+  new_array.uniq
   end
 
 end
