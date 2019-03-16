@@ -7,9 +7,12 @@ class EmailParser
 
 attr_accessor :emails
 
+def initialize(emails)
+end
+
   def parse
-    emails.split('(,"")')
-    # new_array
+    new_array = emails.split('(,"")')
+    new_array
   end
 
 end
