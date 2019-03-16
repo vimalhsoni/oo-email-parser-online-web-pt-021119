@@ -15,9 +15,11 @@ end
   def parse
   #  new_array = @emails.strip.split(/[,]/)
   new_array = @emails.split(/[,' ']/).map(&:strip)
+  modified_array = new_array.reject {|item| item == ""}
   # new_array = @emails.split(/\W+/).map(&:strip)
   # new_array.reject { |item| item.empty? }
-  new_array.uniq
+  # new_array.uniq
+  modified_array.uniq
   end
 
 end
