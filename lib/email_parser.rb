@@ -5,7 +5,7 @@
 
 class EmailParser
 
-  def parse(emails)
+  def parse
     new_array = emails.split('(,"")')
     new_array
   end
